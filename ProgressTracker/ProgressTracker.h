@@ -1,12 +1,12 @@
 #pragma once
 
 #include "bakkesmod/plugin/bakkesmodplugin.h"
+#include "bakkesmod/wrappers/CanvasWrapper.h"
 #include <vector>
 #include <string>
 #include <fstream>
 #include <cctype>
 #include <regex>
-#include "bakkesmod/wrappers/CanvasWrapper.h"
 
 #pragma comment(lib, "pluginsdk.lib")
 
@@ -17,11 +17,9 @@ public:
     virtual void onUnload();
 
 private:
-    void Log(std::string msg);
 
-    // Zeit- und Tod-Daten
-    std::vector<int> timeData;  // Zeit in Sekunden
-    std::vector<int> deathData; // Anzahl der Tode
+    std::vector<int> timeData;
+    std::vector<int> deathData;
 
     bool isGraphVisible = false;
 
@@ -40,4 +38,5 @@ private:
     bool ValidFilename();
     void RemoveItemFromDropdown(const std::string& item);
     void SetBakkesmodFilePaths();
+    void Log(std::string msg);
 };
