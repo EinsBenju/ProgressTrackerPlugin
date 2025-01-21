@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="PluginFiles">
-      <UniqueIdentifier>{c1bcbbb3-252f-419f-8e61-06922fd74600}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -38,13 +35,5 @@
     <ClCompile Include="ProgressTracker.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\Plugin\ProgressTracker.dll">
-      <Filter>PluginFiles</Filter>
-    </None>
-    <None Include="..\Plugin\progresstracker.set">
-      <Filter>PluginFiles</Filter>
-    </None>
   </ItemGroup>
 </Project>

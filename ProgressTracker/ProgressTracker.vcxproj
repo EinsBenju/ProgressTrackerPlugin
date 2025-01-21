@@ -156,10 +156,6 @@
     </ClCompile>
     <ClCompile Include="ProgressTracker.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="..\Plugin\ProgressTracker.dll" />
-    <None Include="..\Plugin\progresstracker.set" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
